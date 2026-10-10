@@ -1,0 +1,42 @@
+{
+  "title": "灯塔的最后一封信",
+  "author": "book-to-html 原创示例",
+  "mode": "fiction",
+  "spoiler_default": "hide",
+  "subtitle": "一篇关于沉默与重新倾听的原创短篇，演示小说梳理方式。",
+  "summary": "林禾回到海边小镇，在停用的灯塔遇见一只旧铁盒。故事围绕她与守塔人、父亲之间的记忆展开。默认可阅读故事起点与人物处境；开启剧透后查看中后段情节和结局解读。所有观点都可以回查原文，也可以提出其他读法。",
+  "coverage": {"scope": "full", "items": [{"label": "原创短篇全部三章", "segments": ["S0001", "S0002", "S0003"], "status": "read"}]},
+  "groups": [{"id": "opening", "title": "故事起点"}, {"id": "development", "title": "人物与主题"}],
+  "units": [
+    {
+      "id": "lighthouse", "group": "opening", "title": "停用的灯塔与留下的椅子", "kind": "开篇与人物", "spoiler": false,
+      "lead": "开篇用灯塔、铁盒和椅子，把林禾带回童年的等待，也留下一个尚未回答的问题。",
+      "points": [
+        {"text": "林禾返回小镇，发现周叔留下铁盒。她暂时没有打开，先登上塔顶。", "origin": "source", "refs": [{"segment": "S0001", "paragraphs": ["P0002"]}]},
+        {"text": "童年回忆中，林禾担心海上的父亲，周叔陪她等待。塔灯不在而椅子仍在，可能让空间承载了人物关系的记忆。", "origin": "interpretation", "refs": [{"segment": "S0001", "paragraphs": ["P0004"]}]}
+      ],
+      "question": {"prompt": "林禾为什么可能先去塔顶，而不是立刻打开铁盒？", "answer": "一种读法是，她先接近熟悉的空间和记忆，再面对未知的消息。原文没有直接说明动机，不能把这种解读写成唯一事实。"}
+    },
+    {
+      "id": "letters", "group": "development", "title": "理解人物之间的沉默", "kind": "情节与人物变化", "spoiler": true,
+      "lead": "铁盒中的信带来新信息，但故事没有立刻给过去的争执一个完整解释。",
+      "points": [
+        {"text": "第二章揭示铁盒里是父亲未寄出的信；林禾想起自己离开时曾拒绝再听海上的事。", "origin": "source", "refs": [{"segment": "S0002", "paragraphs": ["P0002"]}]},
+        {"text": "信中记录生活琐事，周叔也没有代替父亲解释。不替别人完成解释，可以被读为故事对人物自主表达的保留。", "origin": "interpretation", "refs": [{"segment": "S0002", "paragraphs": ["P0004"]}]}
+      ],
+      "question": {"prompt": "信中的琐事怎样改变我们对父亲沉默的理解？", "answer": "它们表明父亲仍在记录想与女儿分享的生活，沉默因此可能含有等待与犹疑。不过信未寄出的原因没有被完全确认。"}
+    },
+    {
+      "id": "listening", "group": "development", "title": "从等待一个答案到迈出一步", "kind": "结局与主题", "spoiler": true,
+      "lead": "结尾的行动回应了开篇的等待，而没有宣称所有误解已经消失。",
+      "points": [
+        {"text": "父亲在最后一封信中表达想听女儿讲陆地生活的愿望；林禾反思自己曾把沉默理解为拒绝。", "origin": "source", "refs": [{"segment": "S0003", "paragraphs": ["P0002"]}]},
+        {"text": "林禾主动打电话约定去港口接父亲。灯没有亮，人物却选择了下一步；灯塔可以被读为一种逐渐转向内在行动的方向象征。", "origin": "interpretation", "refs": [{"segment": "S0003", "paragraphs": ["P0004"]}]}
+      ],
+      "question": {"prompt": "为什么“塔灯仍旧没有亮”并不必然让结局悲观？", "answer": "人物不再只等待外部信号，而是主动联系父亲。这个变化支持一个开放但有行动方向的结局；未来关系怎样发展仍未写出。"}
+    }
+  ],
+  "route_label": "情节与主题检索",
+  "routes": [{"title": "人物怎样开始重新倾听？", "keywords": ["人物", "倾听", "沉默"], "units": ["letters", "listening"]}, {"title": "灯塔意象怎样变化？", "keywords": ["灯塔", "意象", "等待"], "units": ["lighthouse", "listening"]}],
+  "templates": [{"title": "我的另一种读法", "description": "整理者补充；为自己的解读保留证据，也记录不确定之处。", "text": "我的解读：\n支持它的章节与句子：\n可能的另一种读法：\n原文仍未确认的部分："}]
+}
