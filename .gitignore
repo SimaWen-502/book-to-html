@@ -1,0 +1,27 @@
+# Local books and personal reading projects belong outside this repository.
+*.epub
+*.pdf
+*.docx
+*.mobi
+*.azw
+*.azw3
+*.zip
+books/
+book-projects/
+private/
+output/
+build/
+dist/
+*.log
+.env
+.env.*
+*.pem
+*.key
+credentials*
+__pycache__/
+*.py[cod]
+.venv/
+.codex/
+.agents/
+.DS_Store
+Thumbs.db
