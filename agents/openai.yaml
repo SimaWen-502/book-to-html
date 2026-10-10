@@ -1,0 +1,4 @@
+interface:
+  display_name: "书籍整理为 HTML"
+  short_description: "把知识类书籍、小说及混合体裁整理成可离线阅读、检索和回查来源的HTML讲义。"
+  default_prompt: "使用 $book-to-html，把我提供的书按体裁完整整理为独立的HTML读书项目。"
