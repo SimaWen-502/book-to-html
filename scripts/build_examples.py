@@ -12,7 +12,7 @@ def build():
         extract(folder/'original.md',folder/'source')
         render(folder/'source'/'source.json',folder/'knowledge.json',folder/'index.html')
         generated=[folder/'source'/'source.json',folder/'index.html',*(folder/'source'/'segments').glob('*.txt')]
-        for path in generated:path.write_bytes(path.read_bytes().replace(b'\r\n',b'\n'))
+        for path in generated:path.write_bytes(path.read_bytes().replace(b'\r\n',b'\n').rstrip(b'\n')+b'\n')
         audit=Audit();audit.feed((folder/'index.html').read_text(encoding='utf-8'))
         if audit.external or len(audit.ids)!=len(set(audit.ids)) or any(x not in audit.ids for x in audit.links):
             raise ValueError('Example failed offline/link checks: '+genre)
